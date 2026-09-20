@@ -116,7 +116,7 @@ do
 end
 
 -- ========================================
--- NEVAHUB PERFORMANCE / ANTI-SPAM HOOKS
+-- MY HUB PERFORMANCE / ANTI-SPAM HOOKS
 -- Silences error/warn spam, kills the Death effect + NPC guide updates,
 -- and hides decorative Rocks/Foam. All wrapped in pcall so a missing
 -- object or executor limitation never breaks the main script.
@@ -170,7 +170,7 @@ pcall(function()
 end)
 
 -- ========================================
--- NEVAHUB AUTO KEN (Observation Haki).
+-- MY HUB AUTO KEN (Observation Haki).
 -- Off by default; enable with _G.AutoKen = true.
 -- ========================================
 _G.AutoKen = _G.AutoKen or false
@@ -1995,8 +1995,8 @@ function NevaLib:MakeWindow(o)
     end)
 
     local w = Fluent:CreateWindow({
-        Title = "NEVAHUB",
-        SubTitle = "IS BACK | created by NEVA",
+        Title = "MY HUB",
+        SubTitle = "IS BACK | created by MY HUB",
         Version = "release 1.5.5",
         TabWidth = 130,
         Size = UDim2.fromOffset(580, 350),
@@ -13300,8 +13300,8 @@ pcall(function()
 end)
 
 Window:Notify({
-  Title = "NEVAHUB",
-  Content = "NEVAHUB is back - created by NEVA",
+  Title = "MY HUB",
+  Content = "MY HUB is back - created by MY HUB",
   Image = "rbxassetid://75841821715476",
   Duration = 5
 })
