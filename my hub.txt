@@ -2237,8 +2237,8 @@ end)
 Tabs.Info:AddSection("Information")
 
 Tabs.Info:AddDiscordInvite({
-	Title = "NEVAHUB | Community",
-	Description = "A community for NEVAHUB Users - official scripts, updates, and support in one place. Created by NEVA.",
+	Title = "MY HUB | Community",
+	Description = "A community for MY HUB Users - official scripts, updates, and support in one place. Created by MY HUB.",
 	Banner = "rbxassetid://75841821715476", 
 	Logo = "rbxassetid://75841821715476",
 	Invite = "https://discord.gg/GTMEDtwmva",
@@ -5165,8 +5165,8 @@ FishingToggle = Tabs.Fish:AddToggle({
     end
 })
 
---local Players = game:GetService("Players") -- [NEVAHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
---local LocalPlayer = Players.LocalPlayer -- [NEVAHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
+--local Players = game:GetService("Players") -- [MYHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
+--local LocalPlayer = Players.LocalPlayer -- [MYHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
 local Workspace = game:GetService("Workspace")
 --local ReplicatedStorage = game:GetService("ReplicatedStorage") -- [NEVAHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
 local FishReplicated = ReplicatedStorage:WaitForChild("FishReplicated")
@@ -7531,7 +7531,7 @@ local HopToggle = Tabs.Race:AddToggle({
 
                                     -- Hiển thị thông báo với jobid
                                     Window:Notify({
-                                        Title = "NEVAHUB",
+                                        Title = "MYHUB",
                                         Content = "Đã vào server: " .. selected,
                                         Image = "rbxassetid://75841821715476",
                                         Duration = 5
@@ -11175,7 +11175,7 @@ end)
 
 Tabs.Raids:AddSection("Raids Dungeons")
 
---local plr = game.Players.LocalPlayer -- [NEVAHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
+--local plr = game.Players.LocalPlayer -- [MYHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
 
 local function GetHRP()
     local char = plr.Character
@@ -11715,9 +11715,9 @@ end)
 
 Tabs.Combat:AddSection("LocalPlayer Settings")
 
---local Players = game:GetService("Players") -- [NEVAHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
---local UserInputService = game:GetService("UserInputService") -- [NEVAHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
---local RunService = game:GetService("RunService") -- [NEVAHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
+--local Players = game:GetService("Players") -- [MYHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
+--local UserInputService = game:GetService("UserInputService") -- [MYHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
+--local RunService = game:GetService("RunService") -- [MYHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
 
 local player = Players.LocalPlayer
 
@@ -12552,7 +12552,7 @@ local function fetchServersData(placeId, limit)
   end
 end})
 
---local replicated = game:GetService("ReplicatedStorage") -- [NEVAHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
+--local replicated = game:GetService("ReplicatedStorage") -- [MYHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
 
 Tabs.Misc:AddTextBox({
     Name = "Input Job Id",
@@ -12878,7 +12878,7 @@ spawn(function()
     end
   end
 end)
---local player = game.Players.LocalPlayer -- [NEVAHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
+--local player = game.Players.LocalPlayer -- [MYHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
 local function IsEntityAlive(entity)
     if not entity then return false end
     local humanoid = entity:FindFirstChild("Humanoid")
@@ -12993,12 +12993,12 @@ local HitRegistrationModule = {}
 local MainController = {}
 
 local GameService = game
---local Players = GameService:GetService("Players") -- [NEVAHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
---local RunService = GameService:GetService("RunService") -- [NEVAHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
---local ReplicatedStorage = GameService:GetService("ReplicatedStorage") -- [NEVAHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
---local Workspace = GameService:GetService("Workspace") -- [NEVAHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
+--local Players = GameService:GetService("Players") -- [MYHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
+--local RunService = GameService:GetService("RunService") -- [MYHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
+--local ReplicatedStorage = GameService:GetService("ReplicatedStorage") -- [MYHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
+--local Workspace = GameService:GetService("Workspace") -- [MYHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
 
---local LocalPlayer = Players.LocalPlayer -- [NEVAHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
+--local LocalPlayer = Players.LocalPlayer -- [MYHUB FIX] duplicate top-level local removed: the chunk was at 199/200 registers (Luau's hard limit is 200). Already declared identically earlier.
 local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
 
 local function SafeWaitForChild(parent, childName)
@@ -13217,14 +13217,14 @@ StartMainLoops()
 -- Fluent.Options. This is what actually makes Auto Farm and other toggles come
 -- back ON after a rejoin (previously autoload ran before these were created).
 pcall(function()
-    if type(NEVAHUB_DeferredAutoload) == "function" then
-        NEVAHUB_DeferredAutoload()
+    if type(MYHUB_DeferredAutoload) == "function" then
+        MYHUB_DeferredAutoload()
     end
 end)
 
 -- ========================================
--- NEVAHUB AUTO-SAVE (true persistence for ALL toggles/sliders/dropdowns)
--- Auto-manages a config named "NEVAHUB Config":
+-- MYHUB AUTO-SAVE (true persistence for ALL toggles/sliders/dropdowns)
+-- Auto-manages a config named "MYHUB Config":
 --   * ensure it exists + is set as the autoload config,
 --   * re-save it automatically a couple seconds after ANY option changes,
 --   * and periodically as a safety net.
@@ -13235,8 +13235,8 @@ pcall(function()
     local SaveManager = SaveManager or env.SaveManager
     if not (SaveManager and writefile and isfile) then return end
 
-    local AUTO_NAME = "NEVAHUB Config"
-    local folder = SaveManager.Folder or "NEVAHUB"
+    local AUTO_NAME = "MYHUB Config"
+    local folder = SaveManager.Folder or "MYHUB"
     local autoPath = folder .. "/settings/autoload.txt"
 
     local function ensureAutoloadFlag()
